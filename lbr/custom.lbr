@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -86,10 +86,10 @@
 <wire x1="1.05" y1="-0.675" x2="-1.05" y2="-0.675" width="0.12" layer="51"/>
 <text x="0" y="1.6398" size="0.9" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.6398" size="0.9" layer="27" font="vector" align="top-center">&gt;VALUE</text>
-<wire x1="-1.9" y1="0.9" x2="1.9" y2="0.9" width="0.05" layer="39"/>
-<wire x1="1.9" y1="0.9" x2="1.9" y2="-0.9" width="0.05" layer="39"/>
-<wire x1="1.9" y1="-0.9" x2="-1.9" y2="-0.9" width="0.05" layer="39"/>
-<wire x1="-1.9" y1="-0.9" x2="-1.9" y2="0.9" width="0.05" layer="39"/>
+<wire x1="-2" y1="1.5" x2="2" y2="1.5" width="0.05" layer="39"/>
+<wire x1="2" y1="1.5" x2="2" y2="-1.5" width="0.05" layer="39"/>
+<wire x1="2" y1="-1.5" x2="-2" y2="-1.5" width="0.05" layer="39"/>
+<wire x1="-2" y1="-1.5" x2="-2" y2="1.5" width="0.05" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -103,14 +103,14 @@
 <wire x1="-3" y1="-3" x2="-1" y2="3" width="0.1524" layer="94"/>
 <wire x1="-1" y1="3" x2="1" y2="-3" width="0.1524" layer="94"/>
 <wire x1="1" y1="-3" x2="3" y2="3" width="0.1524" layer="94"/>
-<text x="-4" y="1.5" size="1.778" layer="95" font="vector">&gt;Name
+<text x="-1.46" y="1.5" size="1.778" layer="95" font="vector">&gt;Name
 </text>
-<text x="-4" y="-7" size="1.778" layer="96" font="vector">&gt;Value
+<text x="-1.46" y="-7" size="1.778" layer="96" font="vector">&gt;Value
 </text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RESISTOR" prefix="R">
+<deviceset name="RESISTOR" prefix="R" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
