@@ -179,7 +179,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RESISTOR" prefix="R" uservalue="yes">
+<deviceset name="RESISTOR" prefix="R">
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
