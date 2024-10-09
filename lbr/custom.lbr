@@ -91,9 +91,7 @@
 <wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.05" layer="39"/>
 <wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.4" width="0.05" layer="39"/>
 </package>
-<package name="LEDC2012X110N">
-<description>Chip LED, 2.00 X 1.25 X 1.10 mm body
- &lt;p&gt;Chip LED package with body size 2.00 X 1.25 X 1.10 mm&lt;/p&gt;</description>
+<package name="LEDC2012X110">
 <smd name="C" x="-1.05" y="0" dx="1.2" dy="1.2" layer="1"/>
 <smd name="A" x="1.05" y="0" dx="1.2" dy="1.2" layer="1"/>
 <wire x1="-1.6698" y1="1.0048" x2="1" y2="1.0048" width="0.12" layer="21"/>
@@ -173,6 +171,19 @@
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
+<device name="-REDLED" package="LEDC2012X110">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Ivan Arredondo Mancilla"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="160-1178-1-ND"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
