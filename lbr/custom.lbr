@@ -155,9 +155,24 @@
 <wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.05" layer="39"/>
 <wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.05" layer="39"/>
 <text x="-0.5" y="2" size="0.9" layer="25" font="vector">&gt;NAME</text>
-<rectangle x1="-1.5" y1="-1.5" x2="1.5" y2="1.5" layer="41"/>
+<circle x="0.992646875" y="1.14523125" radius="0.057809375" width="0.127" layer="21"/>
+<rectangle x1="-0.8" y1="-0.5" x2="0.8" y2="0.5" layer="41"/>
 <rectangle x1="-1.5" y1="-1.5" x2="1.5" y2="1.5" layer="42"/>
 <rectangle x1="-1.5" y1="-1.5" x2="1.5" y2="1.5" layer="43"/>
+<rectangle x1="-0.225" y1="0.525" x2="0.225" y2="1.2" layer="29"/>
+<rectangle x1="0.275" y1="0.525" x2="0.725" y2="1.2" layer="29"/>
+<rectangle x1="-0.725" y1="0.525" x2="-0.275" y2="1.2" layer="29"/>
+<rectangle x1="-0.225" y1="-1.2" x2="0.225" y2="-0.525" layer="29"/>
+<rectangle x1="0.275" y1="-1.2" x2="0.725" y2="-0.525" layer="29"/>
+<rectangle x1="-0.725" y1="-1.2" x2="-0.275" y2="-0.525" layer="29"/>
+<rectangle x1="-1.45" y1="0.025" x2="-0.775" y2="0.475" layer="29"/>
+<rectangle x1="0.775" y1="0.025" x2="1.45" y2="0.475" layer="29"/>
+<rectangle x1="-1.45" y1="0.525" x2="-0.775" y2="0.975" layer="29"/>
+<rectangle x1="-1.45" y1="-0.475" x2="-0.775" y2="-0.025" layer="29"/>
+<rectangle x1="-1.45" y1="-0.975" x2="-0.775" y2="-0.525" layer="29"/>
+<rectangle x1="0.775" y1="-0.475" x2="1.45" y2="-0.025" layer="29"/>
+<rectangle x1="0.775" y1="-0.975" x2="1.45" y2="-0.525" layer="29"/>
+<rectangle x1="0.775" y1="0.525" x2="1.45" y2="0.975" layer="29"/>
 </package>
 </packages>
 <symbols>
