@@ -289,9 +289,25 @@
 </deviceset>
 <deviceset name="LSM6DS0" prefix="U" uservalue="yes">
 <gates>
+<gate name="G$1" symbol="IMU" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="LSM6DS0">
+<connects>
+<connect gate="G$1" pin="CS" pad="CS"/>
+<connect gate="G$1" pin="GND" pad="GND1 GND2"/>
+<connect gate="G$1" pin="INT1" pad="INT1"/>
+<connect gate="G$1" pin="INT2" pad="INT2"/>
+<connect gate="G$1" pin="OCS_AUX" pad="OCS_AUX"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SCX" pad="SCX"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="SDO" pad="SDO"/>
+<connect gate="G$1" pin="SDO_AUX" pad="SDO_AUX"/>
+<connect gate="G$1" pin="SDX" pad="SDX"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+<connect gate="G$1" pin="VDDIO" pad="VDDIO"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Ivan Arredondo Mancilla"/>
