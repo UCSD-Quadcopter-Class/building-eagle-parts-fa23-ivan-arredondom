@@ -114,7 +114,7 @@
 <smd name="G" x="-1" y="0.95" dx="1.5" dy="1" layer="1" stop="no" cream="no"/>
 <smd name="S" x="-1" y="-0.95" dx="1.5" dy="1" layer="1" stop="no" cream="no"/>
 <smd name="D" x="1.0266" y="0" dx="2.05" dy="2.9" layer="1" stop="no" cream="no"/>
-<circle x="-2.1631" y="1.754" radius="0.25" width="0" layer="21"/>
+<circle x="-1.5631" y="1.954" radius="0.25" width="0" layer="21"/>
 <wire x1="-0.65" y1="1.564" x2="0.65" y2="1.564" width="0.12" layer="21"/>
 <wire x1="0.65" y1="1.564" x2="0.65" y2="0.554" width="0.12" layer="21"/>
 <wire x1="-0.65" y1="-1.564" x2="0.65" y2="-1.564" width="0.12" layer="21"/>
@@ -125,10 +125,10 @@
 <wire x1="0.7" y1="-1.52" x2="-0.7" y2="-1.52" width="0.12" layer="51"/>
 <text x="0" y="2.639" size="0.9" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.199" size="0.9" layer="27" font="vector" align="top-center">&gt;VALUE</text>
-<wire x1="-2.4" y1="1.9" x2="-2.4" y2="-1.9" width="0.05" layer="39"/>
-<wire x1="-2.4" y1="-1.9" x2="2.9" y2="-1.9" width="0.05" layer="39"/>
-<wire x1="2.9" y1="-1.9" x2="2.9" y2="1.9" width="0.05" layer="39"/>
-<wire x1="2.9" y1="1.9" x2="-2.4" y2="1.9" width="0.05" layer="39"/>
+<wire x1="-2.4" y1="2.4" x2="-2.4" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="-2.4" y1="-2.4" x2="2.9" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="2.9" y1="-2.4" x2="2.9" y2="2.4" width="0.05" layer="39"/>
+<wire x1="2.9" y1="2.4" x2="-2.4" y2="2.4" width="0.05" layer="39"/>
 <rectangle x1="0.6225" y1="-0.2795" x2="1.3455" y2="0.2795" layer="29"/>
 <rectangle x1="-1.3465" y1="0.6705" x2="-0.6225" y2="1.2295" layer="29"/>
 <rectangle x1="-1.3465" y1="-1.2295" x2="-0.6225" y2="-0.6705" layer="29"/>
