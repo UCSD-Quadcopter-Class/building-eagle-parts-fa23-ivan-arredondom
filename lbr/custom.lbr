@@ -137,6 +137,24 @@
 <rectangle x1="0.6225" y1="-0.2795" x2="1.3455" y2="0.2795" layer="31"/>
 </package>
 <package name="IMU">
+<smd name="GND1" x="0" y="-0.8625" dx="0.35" dy="0.575" layer="1" stop="no" cream="no"/>
+<smd name="SCL" x="0" y="0.8625" dx="0.35" dy="0.575" layer="1" stop="no" cream="no"/>
+<smd name="SDA" x="0.5" y="0.8625" dx="0.35" dy="0.575" layer="1" stop="no" cream="no"/>
+<smd name="CS" x="-0.5" y="0.8625" dx="0.35" dy="0.575" layer="1" rot="R180" stop="no" cream="no"/>
+<smd name="GND2" x="-0.5" y="-0.8625" dx="0.35" dy="0.575" layer="1" stop="no" cream="no"/>
+<smd name="VDDIO" x="0.5" y="-0.8625" dx="0.35" dy="0.575" layer="1" stop="no" cream="no"/>
+<smd name="INT2" x="-1.1125" y="-0.25" dx="0.35" dy="0.575" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="OCS_AUX" x="-1.1125" y="0.25" dx="0.35" dy="0.575" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="VDD" x="-1.1125" y="-0.75" dx="0.35" dy="0.575" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="SDO_AUX" x="-1.1125" y="0.75" dx="0.35" dy="0.575" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="SDX" x="1.1125" y="0.25" dx="0.35" dy="0.575" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="SCX" x="1.1125" y="-0.25" dx="0.35" dy="0.575" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="SDO" x="1.1125" y="0.75" dx="0.35" dy="0.575" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="INT1" x="1.1125" y="-0.75" dx="0.35" dy="0.575" layer="1" rot="R90" stop="no" cream="no"/>
+<wire x1="-2" y1="1.5" x2="2.5" y2="1.5" width="0.05" layer="39"/>
+<wire x1="2.5" y1="1.5" x2="2.5" y2="-2" width="0.05" layer="39"/>
+<wire x1="2.5" y1="-2" x2="-2" y2="-2" width="0.05" layer="39"/>
+<wire x1="-2" y1="-2" x2="-2" y2="1.5" width="0.05" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -184,6 +202,26 @@
 <wire x1="-1" y1="-2.5" x2="1.5" y2="-2.5" width="0.254" layer="94"/>
 </symbol>
 <symbol name="IMU">
+<pin name="GND2" x="-4" y="-9.5" visible="pad" length="middle" rot="R90"/>
+<pin name="GND1" x="0" y="-9.5" visible="pad" length="middle" rot="R90"/>
+<pin name="VDDIO" x="4" y="-9.5" visible="pad" length="middle" rot="R90"/>
+<pin name="CS" x="-4" y="9.5" visible="pad" length="middle" rot="R270"/>
+<pin name="SCL" x="0" y="9.5" visible="pad" length="middle" rot="R270"/>
+<pin name="SDA" x="4" y="9.5" visible="pad" length="middle" rot="R270"/>
+<pin name="SDO_AUX" x="-11" y="6" visible="pad" length="middle"/>
+<pin name="OCS_AUX" x="-11" y="2" visible="pad" length="middle"/>
+<pin name="INT2" x="-11" y="-2" visible="pad" length="middle"/>
+<pin name="VDD" x="-11" y="-6" visible="pad" length="middle"/>
+<pin name="SDO" x="11" y="6" visible="pad" length="middle" rot="R180"/>
+<pin name="SDX" x="11" y="2.5" visible="pad" length="middle" rot="R180"/>
+<pin name="SCX" x="11" y="-2" visible="pad" length="middle" rot="R180"/>
+<pin name="INT1" x="11" y="-6" visible="pad" length="middle" rot="R180"/>
+<wire x1="-14" y1="12.5" x2="14" y2="12.5" width="0.254" layer="94"/>
+<wire x1="14" y1="12.5" x2="14" y2="-12.5" width="0.254" layer="94"/>
+<wire x1="14" y1="-12.5" x2="-14" y2="-12.5" width="0.254" layer="94"/>
+<wire x1="-14" y1="-12.5" x2="-14" y2="12.5" width="0.254" layer="94"/>
+<text x="-5" y="13" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-5" y="-14.5" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -237,6 +275,38 @@
 <connect gate="G$1" pin="D" pad="D"/>
 <connect gate="G$1" pin="G" pad="G"/>
 <connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Ivan Arredondo Mancilla"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="497-18367-1-ND"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IMU" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="IMU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IMU">
+<connects>
+<connect gate="G$1" pin="CS" pad="CS"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="INT1" pad="INT1"/>
+<connect gate="G$1" pin="INT2" pad="INT2"/>
+<connect gate="G$1" pin="OCS_AUX" pad="OCS_AUX"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SCX" pad="SCX"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="SDO" pad="SDO"/>
+<connect gate="G$1" pin="SDO_AUX" pad="SDO_AUX"/>
+<connect gate="G$1" pin="SDX" pad="SDX"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+<connect gate="G$1" pin="VDDIO" pad="VDDIO"/>
 </connects>
 <technologies>
 <technology name="">
