@@ -266,7 +266,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOSFET" prefix="Q" uservalue="yes">
+<deviceset name="MOSFET" prefix="Q">
 <gates>
 <gate name="G$1" symbol="MOSFET" x="0" y="0"/>
 </gates>
@@ -287,7 +287,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="IMU_LSM6DS0" prefix="U" uservalue="yes">
+<deviceset name="IMU_LSM6DS0" prefix="U">
 <gates>
 <gate name="G$1" symbol="IMU" x="0" y="0"/>
 </gates>
